@@ -31,7 +31,7 @@ const Service = () => {
               })}
             </div>
           </div>
-          <div className="col">
+          <div className="col ">
             <div
               style={{
                 backgroundColor: "#FCCF47",
@@ -50,11 +50,12 @@ const Service = () => {
             </div>
 
             <Canvas
+              className="col-md-4 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column"
               camera={{ position: [2, 0, 12.25], fov: 15 }}
               style={{
                 backgroundColor: "#F8F8F8",
                 width: "30vw",
-                height: "100vh",
+                height: "80vh",
               }}
             >
               <ambientLight intensity={1.25} />

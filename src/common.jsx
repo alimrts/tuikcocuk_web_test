@@ -30,18 +30,18 @@ const Common = (props) => {
                     </NavLink>
                   </div>
                 </div>
-                <div className="col-lg-6 order-1 order-lg-2 header-img">
+                <div className="col-md-6 order-1 order-lg-2 header-img">
                   {/* <img
                     src={props.imgsrc}
                     className="img-fluid animated"
                     alt="home img"
                   /> */}
                   <Canvas
+                    className="col-md-4 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column"
                     camera={{ position: [2, 0, 12.25], fov: 15 }}
                     style={{
-                      backgroundColor: "#F8F8F8",
-                      width: "30vw",
-                      height: "100vh",
+                      minWidth: "30vw",
+                      minHeight: "60vh",
                     }}
                   >
                     <ambientLight intensity={1.25} />
