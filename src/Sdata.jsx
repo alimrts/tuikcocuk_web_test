@@ -3,7 +3,7 @@ import bilmece from "../src/images/g_bilmece.jpg";
 import activity from "../src/images/g_activity.jpg";
 import video from "../src/images/g_video.jpg";
 import tuik from "../src/images/g_tuik_tani.jpg";
-import cocuk_haklari from "./images/g_cocuk_haklari.jpg";
+import cocuk_haklari from "../src/images/g_cocuk_haklari.jpg";
 
 const Sdata = [
   {

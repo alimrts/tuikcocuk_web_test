@@ -22,6 +22,7 @@ const Service = () => {
               {Sdata.map((val, ind) => {
                 return (
                   <Card
+                    className="service_card"
                     key={ind}
                     imgsrc={val.imgsrc}
                     title={val.title}

@@ -9,9 +9,15 @@ import Footer from './Footer'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import Navbar from './Navbar'
 
+
 const App = () => {
   return (
-    <>
+    // <div   style={{ backgroundImage: "url(/images/bgImage1.png)",
+    // backgroundSize: 'cover',
+    // backgroundRepeat: 'no-repeat',
+    // width: '100vw',
+    // height: '120vh'}}>
+    <div>
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -22,7 +28,7 @@ const App = () => {
         <Home />
       </Switch>
       {/* <Footer /> */}
-    </>
+    </div>
   )
 }
 
