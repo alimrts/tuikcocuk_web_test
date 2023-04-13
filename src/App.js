@@ -8,6 +8,7 @@ import Contact from './Contact'
 import Footer from './Footer'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import Navbar from './Navbar'
+import "./App.css";
 
 
 const App = () => {
@@ -17,7 +18,8 @@ const App = () => {
     // backgroundRepeat: 'no-repeat',
     // width: '100vw',
     // height: '120vh'}}>
-    <div>
+   
+    <div className='bg'>
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -29,6 +31,7 @@ const App = () => {
       </Switch>
       {/* <Footer /> */}
     </div>
+   
   )
 }
 

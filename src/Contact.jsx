@@ -28,11 +28,34 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="my-5">
-        <h1 className="text-center"> Bizimle İletişime Geçin</h1>
+      <div
+        className="my-5"
+        style={{
+          background: "rgba(200, 20, 20, 0.1)",
+        }}
+      >
+        <h1
+          className="text-center"
+          style={{
+            background: "rgba(200, 20, 20, 0.0)",
+          }}
+        >
+          {" "}
+          Bizimle İletişime Geçin
+        </h1>
       </div>
-      <div className="container contact_div">
-        <div className="row">
+      <div
+        className="container contact_div"
+        style={{
+          background: "rgba(200, 20, 20, 0.0)",
+        }}
+      >
+        <div
+          className="row"
+          style={{
+            background: "rgba(200, 20, 20, 0.0)",
+          }}
+        >
           <div className="col-md-6 col-10 mx-auto">
             <form onSubmit={formSubmit}>
               <div className="mb-3">

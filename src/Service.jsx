@@ -12,13 +12,36 @@ const Service = () => {
   // const [action, setAction] = useState("Run Forward");
   return (
     <>
-      <div className="my-5">
+      <div
+        className="my-5"
+        style={{
+          background: "rgba(200, 20, 20, 0.0)",
+        }}
+      >
         {/* <h1 className="text-center"> İçerikler </h1> */}
       </div>
-      <div className="container-fluid mb-5" style={{ marginLeft: "2vh" }}>
-        <div className="row">
-          <div className="col-8 mx-auto">
-            <div className="row gy-4">
+      <div
+        className="container-fluid mb-5"
+        style={{ marginLeft: "2vh", background: "rgba(200, 20, 20, 0.0)" }}
+      >
+        <div
+          className="row"
+          style={{
+            background: "rgba(200, 20, 20, 0.0)",
+          }}
+        >
+          <div
+            className="col-8 mx-auto"
+            style={{
+              background: "rgba(200, 20, 20, 0.0)",
+            }}
+          >
+            <div
+              className="row gy-4"
+              style={{
+                background: "rgba(200, 20, 20, 0.0)",
+              }}
+            >
               {Sdata.map((val, ind) => {
                 return (
                   <Card
@@ -32,22 +55,19 @@ const Service = () => {
               })}
             </div>
           </div>
-          <div className="col ">
+          <div
+            className="col "
+            style={{
+              background: "rgba(200, 20, 20, 0.0)",
+            }}
+          >
             <div
               style={{
-                backgroundColor: "#FCCF47",
-                height: "30px",
                 display: "flex",
                 justifyContent: "center",
               }}
             >
-              <span
-                style={{
-                  backgroundColor: "#FCCF47",
-                }}
-              >
-                10-14 Yaş Grubu
-              </span>
+              <span></span>
             </div>
 
             <Canvas
@@ -57,6 +77,7 @@ const Service = () => {
                 backgroundColor: "#F8F8F8",
                 width: "30vw",
                 height: "80vh",
+                cursor: "pointer",
               }}
             >
               <ambientLight intensity={1.25} />
@@ -65,7 +86,15 @@ const Service = () => {
               <Suspense fallback={null}>
                 <Model position={[0.025, -0.6, 1]} rotation={[0, -60, 0]} />
               </Suspense>
-              <OrbitControls />
+              <OrbitControls
+                enableZoom={false}
+                enablePan={false}
+                rotateSpeed={0.5}
+                maxPolarAngle={1.5}
+                minPolarAngle={1.1}
+                maxAzimuthAngle={0.5}
+                minAzimuthAngle={-0.5}
+              />
             </Canvas>
           </div>
         </div>
